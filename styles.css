@@ -13,7 +13,6 @@ body{
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 .container{
-    border: 1px solid olive;
     background-color:#fff;
     display:flex;
     align-items: center;
@@ -23,16 +22,30 @@ body{
     border-radius:20px;
 }
 .img-card{
-    border: 1px solid magenta;
     height:500px;
     width: 500px;
     padding:5px 30px 5px 0;
-    margin: 0 20px 0 -70px;
+    margin: 0 10px 0 0;
+    position:relative;
+    background-image:url("images/bg-pattern-desktop.svg");
+    background-position: left -210px bottom -55px; 
+    background-repeat:no-repeat;
+    background-size: 135%;
 }
-.img-card img{
+.img-card #girl{
     height:100%;
     width: 100%;
     object-fit:contain;
+    position:absolute;
+    left:-70px;
+}
+.img-card #cube{
+    height:40%;
+    width: 40%;
+    object-fit:contain;
+    position:absolute;
+    left:-90px;
+    top:200px;
 }
 .text-card{
     padding:45px;
@@ -57,13 +70,16 @@ h1{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    cursor: pointer;
 }
 .question-text{
   font-size:15px;
+  /* font-size:1rem; */
   color:hsl(238, 29%, 16%);
 }
 .question-text:hover{
     font-weight:700;
+    color:hsl(14, 88%, 65%);
 }
 .openAnswer .question-text{
     font-weight:700;
@@ -86,11 +102,158 @@ h1{
     width:100%;
     margin:20px 0;
     background:hsl(240, 5%, 91%);
+}
 
-    w20px width: 20px;
-    h20px height: 20px;
-    bgc background-color: #fff;
+@media (max-width:1200px){
+    .container{
+        width:80%;
+    }
+}
+
+@media (max-width:992px){
+    .img-card{
+        height:380px;
+        width: 380px;
+        background-position: left -210px bottom -45px; 
+        background-size: 145%; 
+    }
+    .text-card{
+        padding:35px 60px 35px 10px;
+        width:65%;
+    }
+    .img-card #girl{
+        left:-50px;
+    }
+    .img-card #cube{
+        height:30%;
+        width: 30%;
+        left:-30px;
+        top:170px;
+    }
+}
+@media (max-width:862px){
+    .img-card{
+        margin: 0 0 0 0;
+        background-position: left -180px bottom -30px; 
+    }
+    .text-card{
+        padding:35px 50px 35px 0;
+        width:75%;
+    }
+    .img-card #cube{
+        left:-40px;
+        top:165px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        width:85%;
+    }
+    .img-card{
+        border:1px solid olive;
+        height:200px;
+        width: 350px;
+        padding:10px;
+        position:relative;
+        background-position: left -210px bottom -55px; 
+        background-size: 135%;
+    }
+    .img-card #girl{
+        height:120%;
+        /* width: 120%; */
+        position:absolute;
+        left:0;
+        top:-140px;
+    }
+    .img-card #cube{
+        height:40%;
+        width: 40%;
+        object-fit:contain;
+        position:absolute;
+        left:-90px;
+        top:200px;
+    }
+    .text-card{
+        padding:30px;
+        width:90%;
+        /* height:90%; */
+    }
+    h1{
+        text-align:center;
+    }
 }
 
 
+
+/* @media (max-width:992px){
+    .container{
+        width:75%;
+        font-size:11px;
+    }
+    .img-card{
+        height:450px;
+        width: 400px;
+        padding:5px 20px 5px 0;
+        margin: 0 5px 0 0;
+        background-position: left -195px bottom -15px; 
+        background-size: 140%; 
+    }
+    .img-card #girl{
+        left:-50px;
+    }
+    .img-card #cube{
+        height:35%;
+        width: 35%;
+        left:-55px;
+        top:195px;
+    }
+    .text-card{
+        padding:30px 40px 30px 10px;
+        width:55%;
+    }
+    h1{
+        font-size:2rem;
+    }
+    .faq-text{
+        margin-top:25px;
+        height:290px;
+    }
+    .question-text{
+        font-size:14px;
+    }
+}
+@media (max-width:768px){
+    body{
+        font-size:11px;
+    }
+    .container{
+        margin-top:70px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:75%;
+    }
+    .img-card{
+        height:150px;
+        width: 100%;
+        padding:0px 20px 0 20px;
+        background-position: top -15px; 
+        background-size: 100%; 
+    }
+    .img-card #girl{
+        left:0;
+        top:-130px;
+    }
+    .img-card #cube{
+        height:35%;
+        width: 35%;
+        left:-55px;
+        top:195px;
+    }
+    .text-card{
+        padding:30px 40px 30px 10px;
+        width:55%;
+    }
+} */
 
