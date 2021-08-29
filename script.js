@@ -1,4 +1,4 @@
-let li= document.querySelectorAll(".faq-text li");
+let li= document.querySelectorAll(".question");
 for(var i=0; i<li.length; i++){
     li[i].addEventListener("click", (e)=>{
         let clickedLi;
