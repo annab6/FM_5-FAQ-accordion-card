@@ -16,5 +16,5 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ### Links
-- Solution URL: [Add solution URL here]()
-- Live Site URL: (https://annab6.github.io/FM_5-FAQ-accordion-card/)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-using-flexbox-B9fvp2q-Q
+- Live Site URL: https://annab6.github.io/FM_5-FAQ-accordion-card/
