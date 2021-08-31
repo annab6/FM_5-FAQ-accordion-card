@@ -44,7 +44,7 @@ body{
 .img-card #cube-desktop{
     display:block;
     position:absolute;
-    transform: translateX(-50%) translateY(45%);
+    transform: translateX(-62%) translateY(35%);
 }
 .img-card #girl-mobile{
     display:none;
